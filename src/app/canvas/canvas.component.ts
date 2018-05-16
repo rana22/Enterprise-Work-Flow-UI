@@ -12,18 +12,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CanvasComponent implements OnInit {
   private jQuery:any = $;
+  private graph: any = new joint.dia.Graph;
   constructor() { }
 
   ngOnInit() {
-    let graph = new joint.dia.Graph;
+     
 
     let paper = new joint.dia.Paper({ 
-     el: jQuery("#paper"),   
-     width: 1100 ,
-     height: 700,
+     el: jQuery("#canvas"), 
      gridSize: 1,
-     model: graph                           
+     model: this.graph                           
     });
+
+  }
+
+  addCircle(){
+    console.log("say something");
+    let rh = new joint.shapes.basic.Rhombus({
+      position: { x: 50, y: 250 },
+      size: { width: 70, height: 70 },
+      attrs: { text: { text: 'basic.Rhombus', 'font-size': 8 } }
+      });
+      this.graph.addCell(rh);
 
   }
 
