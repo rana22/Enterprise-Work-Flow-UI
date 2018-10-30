@@ -4,5 +4,32 @@ html, body {
     height: 100%;
 }
 
+// $base_font_family: 'ProximaNova' !default;
+// @mixin font-face($file_name, $baseurl, $weight: 500){
+// 	@font-face{
+// 		font-family: $file_name;
+// 		src: url($baseurl + $file_name + '.otf');
+// 		font-weight: $weight;
+// 	}
+// }
 
-  
+@import '~bootstrap-scss/bootstrap.scss';
+
+$base_font_url: '/assets/fonts';
+
+$thin-weight: 100;
+$light-weight: 300;
+$regular-weight: 400;
+$semi-bold-weight: 600;
+$bold-weight: 700;
+
+@font-face {
+  font-family: 'proximanova';
+  src: url($base_font_url+'/ProximaNova-Regular.otf');
+  src: local('☺'), 
+        url($base_font_url+'ProximaNova-Regular.otf') format('otf');
+}
+
+p, label, li, a {
+    font-family: 'proximanova';
+}
