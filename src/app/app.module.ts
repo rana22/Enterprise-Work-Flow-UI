@@ -7,17 +7,21 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './shared/component/header/header.component';
 import { RoutingModule } from './services/routing/routing.module';
 import { RouterModule } from '@angular/router';
+import { TabsModule } from 'ngx-bootstrap';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CanvasComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    RoutingModule
+    RoutingModule,
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

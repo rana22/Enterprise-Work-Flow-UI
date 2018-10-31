@@ -1,12 +1,20 @@
-.navbar-light{
-    a.navbar-brand{
-        color: #f2f2f2;
-    }
+$font-color: #f2f2f2;
 
+.navbar-light{
+    position: absolute;
+    height: 55px;
+    a.navbar-brand{
+        color: $font-color;
+    }
     .collapse{
         .navbar-nav{
+            tabset{
+                height: 55px;
+                padding-top: 15px;
+            }
             .nav-item {
-                color: #f2f2f2;
+                color: $font-color;
+                width : 5em;
             }
         }
     }
