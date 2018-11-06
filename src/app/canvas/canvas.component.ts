@@ -1,4 +1,3 @@
-
 import * as jQuery from 'jquery';
 import * as _ from 'lodash';
 import * as $ from 'backbone';
@@ -16,7 +15,6 @@ export class CanvasComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-     
 
     let paper = new joint.dia.Paper({ 
      el: jQuery("#canvas"), 
@@ -34,7 +32,5 @@ export class CanvasComponent implements OnInit {
       attrs: { text: { text: 'basic.Rhombus', 'font-size': 8 } }
       });
       this.graph.addCell(rh);
-
   }
-
 }
