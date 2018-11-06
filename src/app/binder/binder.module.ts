@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { FormComponent } from './components/form/form.component';
 import { BinderComponent } from './binder.component';
 import { BsModalService } from 'ngx-bootstrap/modal';
+import { BinderRoutingModule } from './binder.routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    BinderRoutingModule
   ],
   declarations: [FormComponent, 
                   BinderComponent],

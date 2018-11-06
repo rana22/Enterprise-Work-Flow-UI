@@ -7,7 +7,7 @@ import { HeaderComponent } from './shared/component/header/header.component';
 import { RoutingModule } from './services/routing/routing.module';
 import { TabsModule } from 'ngx-bootstrap';
 import { CanvasModule } from './canvas/canvas.module';
-import { BinderModule } from './binder/binder.module';
+// import { BinderModule } from './binder/binder.module';
 import { ModalModule } from 'ngx-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -29,7 +29,7 @@ import {
     RoutingModule,
     TabsModule.forRoot(),
     CanvasModule,
-    BinderModule,
+    // BinderModule,
     ModalModule.forRoot(),
     BrowserAnimationsModule,
     MatButtonModule,
